@@ -12,7 +12,7 @@ namespace BlackJackMVC.DAL.Entities.Participants
         public string Name { get; set; }
         public int Score { get; set; }
 
-        public List<CardDeck.CardEntity> Hand { get; set; }
+        //public List<CardDeck.CardEntity> Hand { get; set; }
 
         public Participant() { }
 
@@ -20,7 +20,7 @@ namespace BlackJackMVC.DAL.Entities.Participants
         {
             Name = name;
             Score = score;
-            Hand = new List<CardDesk.CardEntity>();
+            //Hand = new List<CardDesk.CardEntity>();
         }
 
     }

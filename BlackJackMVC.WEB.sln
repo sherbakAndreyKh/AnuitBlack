@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJackMVC.WEB", "BlackJa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJackMVC.DAL", "BlackJackMVC.DAL\BlackJackMVC.DAL.csproj", "{BC2CE8FD-0637-4224-9C2E-C6060F1EA9D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJackMVC.BLL", "BlackJackMVC.BLL\BlackJackMVC.BLL.csproj", "{289968FB-6146-4CC1-AB7C-14F6A7F77EFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BC2CE8FD-0637-4224-9C2E-C6060F1EA9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC2CE8FD-0637-4224-9C2E-C6060F1EA9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC2CE8FD-0637-4224-9C2E-C6060F1EA9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{289968FB-6146-4CC1-AB7C-14F6A7F77EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289968FB-6146-4CC1-AB7C-14F6A7F77EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289968FB-6146-4CC1-AB7C-14F6A7F77EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289968FB-6146-4CC1-AB7C-14F6A7F77EFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
