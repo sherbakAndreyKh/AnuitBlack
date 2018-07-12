@@ -11,7 +11,7 @@ using BlackJackMVC.DAL.Interfaces;
 
 namespace BlackJackMVC.DAL.Repositories
 {
-    class PlayerRepository : IRepository<Player> 
+   public class PlayerRepository : IRepository<Player> 
     {
         private BlackJackContext db;
 

@@ -10,7 +10,7 @@ using BlackJackMVC.DAL.EntityFramework;
 
 namespace BlackJackMVC.DAL.Repositories
 {
-    class DealerReopsitory : IRepository<Dealer>
+   public class DealerReopsitory : IRepository<Dealer>
     {
         private BlackJackContext db;
 
