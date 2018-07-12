@@ -9,7 +9,7 @@ using BlackJackMVC.DAL.Interfaces;
 
 namespace BlackJackMVC.DAL.Repositories
 {
-    class EFUnitOfWork : IUnitOfWork
+   public class EFUnitOfWork : IUnitOfWork
     {
         private BlackJackContext _db;
         private PlayerRepository _playerRepository;
