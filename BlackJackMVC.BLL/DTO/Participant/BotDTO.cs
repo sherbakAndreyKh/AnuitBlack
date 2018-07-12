@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlackJackMVC.BLL.DTO.Participant
 {
-    class BotDTO
+    public class BotDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -8,11 +8,12 @@ using BlackJackMVC.DAL.Entities.Participants;
 using BlackJackMVC.DAL.Interfaces;
 using BlackJackMVC.BLL.Infrastructure;
 using BlackJackMVC.BLL.Interfaces;
+using BlackJackMVC.BLL.BusinessModels;
 using AutoMapper;
 
 namespace BlackJackMVC.BLL.Services
 {
-    class OptionsService : IPlayerService
+    public class OptionsService : IPlayerService
     {
         IUnitOfWork database { get; set; }
 
@@ -21,18 +22,16 @@ namespace BlackJackMVC.BLL.Services
             database = unitOfWork;
         }
 
-        public void GameOptions(PlayerDTO playerDTO, BotDTO botDTO)
+        public void GameOptions(Options options)
         {
             Player player = new Player()
             {
-                Name = playerDTO.Name,
-                Score = playerDTO.Score
+                Name = options.NamePlayer
             };
 
             Bot bot = new Bot()
             {
-                Name = botDTO.Name,
-                Score = botDTO.Score
+                Name = options.NameBot
             };
 
             database.Players.Create(player);

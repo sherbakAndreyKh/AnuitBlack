@@ -9,7 +9,7 @@ using BlackJackMVC.DAL.Repositories;
 
 namespace BlackJackMVC.BLL.Infrastructure
 {
-    class ServiceModule : NinjectModule
+    public class ServiceModule : NinjectModule
     {
         private string _connectionString;
 

@@ -3,28 +3,47 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BlackJackMVC.WEB.Models;
+using BlackJackMVC.BLL.Interfaces;
+using BlackJackMVC.BLL.DTO.Participant;
+using BlackJackMVC.BLL.BusinessModels;
+using AutoMapper;
+using System.Data.Entity;
 
 namespace BlackJackMVC.WEB.Controllers
 {
     public class HomeController : Controller
     {
+        IPlayerService playerService;
+        public HomeController(IPlayerService service)
+        {
+            playerService = service;
+        }
+
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        [HttpGet]
+        public ActionResult Options()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
-
-        public ActionResult Contact()
+        
+        [HttpPost]
+        public ActionResult Options(OptionsViewModel options)
         {
-            ViewBag.Message = "Your contact page.";
+            Options option = new Options()
+            {
+                NamePlayer = options.NamePlayer,
+                NameBot = options.NameBot
+            };
 
-            return View();
+            playerService.GameOptions(option);
+
+            return RedirectToAction("Index");
         }
+    
     }
 }
