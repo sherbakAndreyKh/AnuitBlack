@@ -10,7 +10,7 @@ using BlackJackMVC.DAL.Interfaces;
 
 namespace BlackJackMVC.DAL.Repositories
 {
-   public class BotRepository : IRepository<Bot>
+     class BotRepository : IRepository<Bot>
     {
         private BlackJackContext db;
 
